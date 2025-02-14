@@ -1,30 +1,30 @@
 # Machine Learning in Bioinformatics
-> Máster en Bioinformática Aplicada a Medicina Personalizada y Salud (Curso 2023-2024)
+> Máster en Bioinformática Aplicada a Medicina Personalizada y Salud (Curso 2024-2025)
 
 # Scheduling
 
-## First week (12-16 February 2024)
-- Day 1 (12.02.2024):
+## First week (24-28 February 2025)
+- Day 1 (24.02.2025) [*online*]:
   - 2/3 Theory
   - 1/3 Project: Session I ([project](PROJECT.md) presentation)
-- Day 2 (13.02.2024):
+- Day 2 (25.02.2025) [*online*]:
   - 1/2 Theory
   - 1/2 Project: Session II
-- Day 3 (14.02.2024): 
+- Day 3 (26.02.2025) [*online*]: 
   - 2/3 Theory
   - 1/3 Project: Session III (with problem and dataset presentation [HITO-1](PROJECT.md))
-- Day 4 (15.02.2024):
+- Day 4 (27.02.2025):
   - Practice: Hands-On (Machine Learning Basics in Python with scikit-learn Part I)
-- Day 5 (16.02.2024):
+- Day 5 (28.02.2025):
   - Practice: Hands-On (Machine Learning Basics in Python with scikit-learn Part II)
 
-## Second week (26-28 February 2024)
-- Day 6 (26.02.2024):
+## Second week (3-5 February 2024)
+- Day 6 (03.03.2025):
   - 1/2 Theory: presentation of a real case-study (the [PolyDeep project](https://polydeep.org/))
   - 1/2 Project: Session IV
-- Day 7 (27.02.2024):
+- Day 7 (04.03.2025):
     - Project: Session III
-- Day 8 (28.02.2024):
+- Day 8 (05.03.2025):
     - Project Session: IV (with results presentation [HITO-2](PROJECT.md))
 
 # Theory
@@ -88,6 +88,13 @@ The information about the project is available [here](PROJECT.md).
 - [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
 
 # Additional Resources
+
+## Papers
 - Ten quick tips for machine learning in computational biology [[10.1186/s13040-017-0155-3](https://dx.doi.org/10.1186%2Fs13040-017-0155-3)]
-- [LIBSVM -- A Library for Support Vector Machines](https://www.csie.ntu.edu.tw/~cjlin/libsvm/)
+- DOME: recommendations for supervised machine learning validation in biology [[10.1038/s41592-021-01205-4](https://doi.org/10.1038/s41592-021-01205-4)]
+
+## Libraries
 - [scikit-learn: machine learning in Python](https://scikit-learn.org/stable/)
+- [Imbalanced-learn](https://imbalanced-learn.org/stable/index.html)
+- [XGBoost](https://xgboost.readthedocs.io/en/stable/)
+- [LIBSVM -- A Library for Support Vector Machines](https://www.csie.ntu.edu.tw/~cjlin/libsvm/)
