@@ -16,9 +16,10 @@
 - Day 4 (27.02.2025):
   - Practice: Hands-On (Machine Learning Basics in Python with scikit-learn Part I)
 - Day 5 (28.02.2025):
-  - Practice: Hands-On (Machine Learning Basics in Python with scikit-learn Part II)
+  - 2/3 Practice: Hands-On (Machine Learning Basics in Python with scikit-learn Part II)
+  - 1/3 Practical tips for Machine Learning
 
-## Second week (3-5 February 2024)
+## Second week (3-5 February 2025)
 - Day 6 (03.03.2025):
   - 1/2 Theory: presentation of a real case-study (the [PolyDeep project](https://polydeep.org/))
   - 1/2 Project: Session IV
@@ -27,41 +28,32 @@
 - Day 8 (05.03.2025):
     - Project Session: IV (with results presentation [HITO-2](PROJECT.md))
 
-# Theory
-
-The theory slides are available [here](resources/theory-machinelearning.pdf).
-
 # Practice
 
-## Install Docker in your system
+## Install Conda in your system
 
-Follow the steps in the official page to install Docker https://docs.docker.com/engine/install/ubuntu/
+Download and install Miniconda from: https://www.anaconda.com/download/success
 
-Make sure the docker user group exists.
+## Creating the Conda environment
 
-```bash
-sudo groupadd docker
-```
-
-Add your user to the docker group.
+Run the following command to create the Conda environment for the hands-on practice sessions:
 
 ```bash
-sudo usermod -aG docker $USER
+conda env create -f environment.yml
 ```
 
-Reboot the system and the changes will be applied.
-
-## Running the Docker image
-
-Run the following commands to pull the Docker image for the hands-on practice sessions:
-
+And then activate it by running:
 ```bash
-docker pull singgroup/jupyter-machine-learning:2023-2024
+conda activate machine-learning
 ```
 
-During the hands-on sessions (Machine Learning Basics in Python with scikit-learn), we are going to use the `Breast Cancer Data` available at the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)). More information about this dataset can be found [here](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.names) and [here](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data).
+## Donload the breast cancer dataset
 
-Go to an empty folder and run the following commands to download the data: 
+During the hands-on sessions (Machine Learning Basics in Python with scikit-learn), we are going to use the `Breast Cancer Data` available [here](data/wdbc.data).
+
+ This file came from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)). More information about this dataset can be found [here](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.names) and [here](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data).
+
+To download it again, run the following commands: 
 ```bash
 mkdir data
 
@@ -69,15 +61,6 @@ wget https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wis
 
 sed -i '1iid,diagnosis,radius_mean,texture_mean,perimeter_mean,area_mean,smoothness_mean,compactness_mean,concavity_mean,concave points_mean,symmetry_mean,fractal_dimension_mean,radius_se,texture_se,perimeter_se,area_se,smoothness_se,compactness_se,concavity_se,concave_points_se,symmetry_se,fractal_dimension_se,radius_worst,texture_worst,perimeter_worst,area_worst,smoothness_worst,compactness_worst,concavity_worst,concave points_worst,symmetry_worst,fractal_dimension_worst' data/wdbc.data
 ```
-
-Alternatively, the file is also available [here](data/wdbc.data).
-
-Clone or download this repository and then run the following command (from the local repository) to use the Docker image to start a Jupyter notebook with the required libraries already installed: 
-```bash
-docker run --rm -p 8888:8888 -v "$(pwd)":"$(pwd)" -w "$(pwd)" singgroup/jupyter-machine-learning:2023-2024
-```
-
-And then access `http://127.0.0.1:8888/lab` in a web browser. The `resources/notebook-ml-1.ipynb` file contains the notebook to develop during these sessions.
 
 # Project
 
@@ -92,6 +75,7 @@ The information about the project is available [here](PROJECT.md).
 ## Papers
 - Ten quick tips for machine learning in computational biology [[10.1186/s13040-017-0155-3](https://dx.doi.org/10.1186%2Fs13040-017-0155-3)]
 - DOME: recommendations for supervised machine learning validation in biology [[10.1038/s41592-021-01205-4](https://doi.org/10.1038/s41592-021-01205-4)]
+- The ABC recommendations for validation of supervised machine learning results in biomedical sciences [[10.3389/fdata.2022.979465](https://doi.org/10.3389/fdata.2022.979465)]
 
 ## Libraries
 - [scikit-learn: machine learning in Python](https://scikit-learn.org/stable/)
