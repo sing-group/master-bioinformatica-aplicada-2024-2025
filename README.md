@@ -47,7 +47,7 @@ And then activate it by running:
 conda activate machine-learning
 ```
 
-## Donload the breast cancer dataset
+## Download the breast cancer dataset
 
 During the hands-on sessions (Machine Learning Basics in Python with scikit-learn), we are going to use the `Breast Cancer Data` available [here](data/wdbc.data).
 
