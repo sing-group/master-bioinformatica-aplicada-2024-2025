@@ -82,3 +82,7 @@ The information about the project is available [here](PROJECT.md).
 - [Imbalanced-learn](https://imbalanced-learn.org/stable/index.html)
 - [XGBoost](https://xgboost.readthedocs.io/en/stable/)
 - [LIBSVM -- A Library for Support Vector Machines](https://www.csie.ntu.edu.tw/~cjlin/libsvm/)
+
+## Lectures
+- [Stratified Splitting with train_test_split Using Target and Group Variables](https://medium.com/@hlfzeus/stratified-splitting-with-train-test-split-using-target-and-group-variables-part-1-f3dbe5ce84fd)
+- [Combining sklearn’ GridSearchCV with Leave-One-Out Cross-Validation (LOOCV)](https://medium.com/p/c837c3a08265)
